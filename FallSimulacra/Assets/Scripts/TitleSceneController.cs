@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd819b79693d1fa38b1c3166a6c6608b86473496311c75d7e1af093b3e526609
-size 275
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class TitleSceneController : MonoBehaviour
+{
+    public void OnClickStartButton()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+}

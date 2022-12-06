@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e581dfef18c1d061d5d53baff76de0602750ba440fe475c5d08ef9e0a394d77b
-size 653
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Balls : MonoBehaviour
+{
+    void Update()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                //Destroy(hit.collider.gameObject);
+                Rigidbody rb = hit.collider.gameObject.GetComponent<Rigidbody>();
+                Vector3 force = new Vector3(0.0f, 5.0f, 20.0f);
+                rb.AddForce(force, ForceMode.Impulse);
+            }
+        }
+    }
+}

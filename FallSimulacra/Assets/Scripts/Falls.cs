@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2b1cf9ad62563fbfa42ba5aa49c891ce26969d810031f25a74c901778401407
-size 331
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Falls : MonoBehaviour
+{
+    public float speed;
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Rotate(Vector3.one);
+        transform.Translate(Vector3.down * speed, Space.World);
+    }
+}
