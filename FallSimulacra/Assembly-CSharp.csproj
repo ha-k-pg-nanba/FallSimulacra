@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Generator.cs" />
+    <Compile Include="Assets\Scripts\Balls.cs" />
     <Compile Include="Assets\Scripts\Falls.cs" />
     <Compile Include="Assets\Scripts\TitleSceneController.cs" />
-    <Compile Include="Assets\Scripts\Balls.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Target_Black.cs" />
+    <Compile Include="Assets\Scripts\RandomBall.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
