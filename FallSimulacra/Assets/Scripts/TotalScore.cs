@@ -1,24 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class TotalScore : MonoBehaviour
-{
-    public Text ScoreText;
-    int score;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        score = Target_Black.getscore();
-
-        ScoreText.text = string.Format("Score:{0}", score);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ee9f4ad69e9bdb5b17f231f3c94b22e42ca17379f40bb81c49e70418ace8946
+size 471

@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RandomBall : MonoBehaviour
-{
-    public GameObject[] falls;
-    public GameObject ball;
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Time.frameCount % 150 == 0)
-        {
-            GameObject fall = Instantiate(
-                falls[Random.Range(0, falls.Length)],
-                new Vector3(Random.Range(-14f, 14f), transform.position.y, transform.position.z),
-                Quaternion.identity
-                );
-            Destroy(fall, 5f);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c3a2f75f1977ff6de9021517ccb430863959c2c12878ce9fe98c6a14995c086
+size 585
