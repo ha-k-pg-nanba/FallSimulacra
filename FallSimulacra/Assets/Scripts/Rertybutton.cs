@@ -1,25 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
-public class Rertybutton : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void OnRetry()
-    {
-        SceneManager.LoadScene("GameScene");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8c1f2258f4cabee065a341771a92fa18df95f8f6bd7b45d55698ff7bbb528aa
+size 551
